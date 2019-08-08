@@ -84,14 +84,6 @@ function flattenWithUniquenes(arr){
     return uniquenessArray
 }
 
-
-
-
-
-
-
-
-
 let arr  = [1,2,3,4,5,6]
 let compactArr = [1,0,2,'',3,"",4,undefined,5,null]
 let deepFlattenArr = [[1,2],3,[5,2],4,5,[2,3,[[4]]]]
