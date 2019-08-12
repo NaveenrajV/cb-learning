@@ -9,117 +9,124 @@
 <link rel="stylesheet" href="./styles.css">
 <body>
     <header>
-         <h1><i>HTML Elements</i></h1>
+         <h1><i><abbr title="HyperText Markup Language" style="text-decoration: none;">HTML</abbr> Elements</i></h1>
     </header>
     <nav>
         <ul>
             <li><a href="#heading">Headings</a></li>
             <li><a href="#para">Paragraph</a></li>
-            <li><a href="#version">Table</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#list">List</a></li>
             <li><a href="">Forms</a></li>
         </ul>
     </nav>
-
-
     <p>We are going to start with Heading tags, H1 is the largest one and h6 is smallest.<br><br>
     The tags looks like the following one :</p>
     <center>
-    <table id = "heading" class = 'heading'>
-        <tr>
-            <td>&lt;h1&gt;</td>
-            <td><h1> H1 tag</h1></td>
-            <td>&lt;h4&gt;</td>
-            <td><h4> H4 tag</h4></td>
-        </tr>
-        <tr>
-            <td>&lt;h2&gt;</td>
-            <td><h2> H2 tag</h2></td>
-            <td>&lt;h5&gt;</td>
-            <td><h5> H5 tag</h5></td>
-        </tr>
-        <tr>
-            <td>&lt;h3&gt;</td>
-            <td><h3> H3 tag</h3></td>
-            <td>&lt;h6&gt;</td>
-            <td><h5> H6 tag</h5></td>
-        </tr>
-    </table>
-</center>
+        <table id = "heading" class = 'heading' style="width:100%">
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td><h1> H1 tag</h1></td>
+                <td>&lt;h4&gt;</td>
+                <td><h4> H4 tag</h4></td>
+            </tr>
+            <tr>
+                <td>&lt;h2&gt;</td>
+                <td><h2> H2 tag</h2></td>
+                <td>&lt;h5&gt;</td>
+                <td><h5> H5 tag</h5></td>
+            </tr>
+            <tr>
+                <td>&lt;h3&gt;</td>
+                <td><h3> H3 tag</h3></td>
+                <td>&lt;h6&gt;</td>
+                <td><h5> H6 tag</h5></td>
+            </tr>
+        </table>
+    </center>
 
-<div id="para">
-<h2>Paragraph </h2>
-    <p> Paragraph is created using <b>&lt;p&gt;</b> tag <br>
-    Break tag <b>&lt;br&gt;</b> is used for providing break between lines</p>
-    <b>The following is the sample paragraph.</b>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-        took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <h3>Text Formatting</h3>
+    <div id="para" class="innerHeading">
+    <h2>Paragraph </h2>
+        <p> Paragraph is created using <b>&lt;p&gt;</b> tag <br>
+        Break tag <b>&lt;br&gt;</b> is used for providing break between lines</p>
+        <b>The following is the sample paragraph.</b>
+        <p title ="Randomly generated paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h3>Text Formatting</h3>
+        
+        <table class="formatting" style="width: 100%">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Bold Text</td>
+                <td><b>Bold Text</b></td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Important text</td>
+                <td><strong>Important text</strong></td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Italic text</td>
+                <td><i>Italic text</i></td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Emphasized text</td>
+                <td><em>Emphasized text</em></td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Marked text</td>
+                <td><mark>Marked text</mark></td>
+            </tr>
+            <tr>
+                <td>&lt;small&gt;</td>
+                <td>Small text</td>
+                <td><small>Small text</small></td>
+            </tr>
+            <tr>
+                <td>&lt;del&gt;</td>
+                <td>Deleted text</td>
+                <td><del>Deleted text</del></td>
+            </tr>
+            <tr>
+                <td>&lt;ins&gt;</td>
+                <td> Inserted text</td>
+                <td><ins> Inserted text</ins></td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Subscript text</td>
+                <td><sup>Subscript text</sup></td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Superscript text</td>
+                <td><sup>Superscript text</sup></td>
+            </tr>
+        </table>
+
+    </div>
     
-    <table class="formatting" style="width: 100%">
-        <tr>
-            <th>Tag</th>
-            <th>Description</th>
-            <th>Usage</th>
-        </tr>
-        <tr>
-            <td>&lt;b&gt;</td>
-            <td>Bold Text</td>
-            <td><b>Bold Text</b></td>
-        </tr>
-        <tr>
-            <td>&lt;strong&gt;</td>
-            <td>Important text</td>
-            <td><strong>Important text</strong></td>
-        </tr>
-        <tr>
-            <td>&lt;i&gt;</td>
-            <td>Italic text</td>
-            <td><i>Italic text</i></td>
-        </tr>
-        <tr>
-            <td>&lt;em&gt;</td>
-            <td>Emphasized text</td>
-            <td><em>Emphasized text</em></td>
-        </tr>
-        <tr>
-            <td>&lt;mark&gt;</td>
-            <td>Marked text</td>
-            <td><mark>Marked text</mark></td>
-        </tr>
-        <tr>
-            <td>&lt;small&gt;</td>
-            <td>Small text</td>
-            <td><small>Small text</small></td>
-        </tr>
-        <tr>
-            <td>&lt;del&gt;</td>
-            <td>Deleted text</td>
-            <td><del>Deleted text</del></td>
-        </tr>
-        <tr>
-            <td>&lt;ins&gt;</td>
-            <td> Inserted text</td>
-            <td><ins> Inserted text</ins></td>
-        </tr>
-        <tr>
-            <td>&lt;sub&gt;</td>
-            <td>Subscript text</td>
-            <td><sup>Subscript text</sup></td>
-        </tr>
-        <tr>
-            <td>&lt;sup&gt;</td>
-            <td>Superscript text</td>
-            <td><sup>Superscript text</sup></td>
-        </tr>
-    </table>
-
-</div>
-    <p><b><abbr title="HyperText Markup Language"><q>HTML</q></abbr></b> is easy to learn.</p>
-    <!-- Comments is used to give info about code and also hide line from execution-->
-    <p>Latest Version of HTML is HTML 5</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML 5 Logo" style="height:100px;width:70px">
+    
+    <div id="table" class="innerHeading">
+        <h2>Table </h2>
+        <p> 
+            Each table row is defined with the &lt;tr&gt;tag. A table header is 
+            defined with the &lt;th&gt;tag. By default, table headings are 
+            bold and centered. A table data/cell is defined with the
+            &lt;td&gt;tag.
+        </p>
+    
+    <h4>Example table</h4>
     <table id="version" class='version'>
         <tr>
             <th>Technology</th>
@@ -134,25 +141,39 @@
             <td>3</td>
         </tr>
     </table>
+
+</div>
+
+<div id = "list" class = "innerHeading">
+    <h2>List</h2>
     <p>Two types of list Available </p>
     <ol>
-        <li>
-            <ul>
-                <li>Unordered</li>
-                <li>Unordered</li>
-            </ul>      
-        </li>
-        <br>
-        <li>
-            <ul>
-                <li>Unordered</li>
-                <li>Unordered</li>
-            </ul> 
-        </li>
+        <li>Ordered List</li>
+        <li>Unordered List</li>
     </ol>
+ 
+    <div style="width: 50%;float:right">
+    <p>Example of Unordered list</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    </div>
+    <div style="width: 50%;float:left">
+        <p>Example of ordered list</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+    </div>
+ 
+</div>
     <div>The &lt;div&gt; element is often used as a container for other HTML elements.</div>
     <span>Defines a section in a document (inline)</span>
     <br><br>
+    <div id="form" class="innerHeading">
+        <h2>Form</h2>
     <a href="./form.html">Click here for registration form</a>
+    </div>
 </body>
 </html>
