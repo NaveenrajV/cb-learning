@@ -12,12 +12,13 @@
     
         <h3>Form</h3>
         <form method = "GET" target="_blank" autocomplete="off">
-                <label>Name : </label><input type="text" name="username" maxlength="15" autofocus><br><br>
-                <label>Password : </label><input type="Password" name="password"><br><br>
+                <label>Name : </label><input type="text" name="username" maxlength="15" autofocus required><br><br>
+                <label>Password : </label><input type="Password" name="password" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8}$"
+                oninvalid ="this.setCustomValidity('Must contain atleast one uppercase,lowercase,symbol,min of 8 characters')"><br><br>
                 <label>Age :</label><input type='number' value = "16" min='16' max='25'step=""
                 oninvalid="this.setCustomValidity('Please Enter age between 16 to 25')"><br><br>
                 <label>DOB :</label><input type="date" name = "dob" min = '1990-01-01'><br><br>
-                <label>Email :</label><input type='email' name = "email"><br><br>
+                <label>Email :</label><input type='email' name = "email" required><br><br>
                 <label>Gender :</label><br>
                 <input type="radio" name="gender" value="male" checked> Male<br>
                 <input type="radio" name="gender" value="female"> Female<br><br>
