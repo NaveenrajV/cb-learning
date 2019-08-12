@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+    
+        <h3>Form</h3>
+        <form method = "GET" target="_blank" autocomplete="off">
+                <label>Name : </label><input type="text" name="username" maxlength="15" autofocus><br><br>
+                <label>Password : </label><input type="Password" name="password"><br><br>
+                <label>Age :</label><input type='number' value = "16" min='16' max='25'step=""
+                oninvalid="this.setCustomValidity('Please Enter age between 16 to 25')"><br><br>
+                <label>DOB :</label><input type="date" name = "dob" min = '1990-01-01'><br><br>
+                <label>Email :</label><input type='email' name = "email"><br><br>
+                <label>Gender :</label><br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br><br>
+                <label>Degree :</label><br>
+                <input type="radio" name="degree" value="male" checked> B.E<br>
+                <input type="radio" name="degree" value="female"> B.Tech<br><br>
+                <label>Courses list :</label>
+                <select name="course">
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="it">IT</option>
+                    <option value="civil">CIVIL</option>
+                </select><br><br>
+        
+                <label> Facilities needed :</label><br>
+                <input type="checkbox" name="facility">Bus<br>
+                <input type="checkbox" name="facility">Wifi<br>
+                
+                <label>Address :</label><br>
+                <textarea name="address" rows="5" cols="30" style="resize: none;"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+        </fieldset>
+</body>
+</html>
