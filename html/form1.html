@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_form1.css">
+
+
+
+  
+</head>
+<body style="background-color: #042f4b">
+    <div class = "FormRegister">
+    <form method = "GET" target="_blank" autocomplete="off">
+    <table>
+        <tr>
+            <td><label>Name </label></td>
+            <td><input type="text" name="username" maxlength="15" autofocus required></td>
+        </tr>
+        <tr>
+            <td><label>Password </label></td>
+            <td><input type="Password" name="password" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8}$"
+                oninvalid ="this.setCustomValidity('Must contain atleast one uppercase,lowercase,symbol,min of 8 characters')"></td>
+        </tr>
+        <tr>
+            <td><label>Age </label></td>
+            <td><input type='number' value = "16" min='16' max='25'step=""
+                oninvalid="this.setCustomValidity('Please Enter age between 16 to 25')"></td>
+        </tr>
+        <tr>
+            <td><label>DOB </label></td>
+            <td><input type="date" name = "dob" min = '1990-01-01'></td>
+        </tr>
+        <tr>
+            <td><label>Email </label></td>
+            <td><input type='email' name = "email" required></td>
+        </tr>
+        <tr>
+            <td><label>Gender </label></td>
+            <td><input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female</td>
+        </tr>
+        <tr>
+            <td><label>Degree </label></td>
+            <td><input type="radio" name="degree" value="male" checked> B.E<br>
+                <input type="radio" name="degree" value="female"> B.Tech</td>
+        </tr>
+        <tr>
+            <td> <label>Courses list </label></td>
+            <td>
+                <select name="course">
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="it">IT</option>
+                        <option value="civil">CIVIL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <label> Facilities needed </label></td>
+            <td>
+                <input type="checkbox" name="facility">Bus<br>
+                <input type="checkbox" name="facility">Wifi<br>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Address </label></td>
+            <td> <textarea name="address" rows="5" cols="30" style="resize: none;"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset"></td>
+        </tr>
+    </table>
+    </form>
+    </div>
+</body>
+</html>
