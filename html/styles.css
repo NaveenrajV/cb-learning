@@ -1,10 +1,17 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-size : 18px;
+    background-color: #fcfafa;
+  
 }
 
 header{
-    background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-903ea3cb.jpg");
-    color:white;
+    /* background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-903ea3cb.jpg"); */
+   background-color:#64c4ed;
+    color:black;
     margin : auto ;
     height: 80px;
     text-align: center;
@@ -13,9 +20,13 @@ header{
     font-family: 'Cambria';
 }
 
+table.heading{
+    border-collapse: collapse;
+
+}
 table.heading tr td{
     width: 150px;
-    border:none;
+    border-spacing: 10px;
 }
 table.heading tr:nth-child(odd) {
     background-color:rgb(211, 209, 209);
@@ -31,8 +42,10 @@ table.version th,table.version td {
     border-bottom: 1px solid #ddd;
   }
 
+table.formatting{
+    border-collapse: collapse;
+}
 table.formatting th{
-  
     height:40px;
     border-bottom: 2px solid black;
    
@@ -48,9 +61,9 @@ table.formatting tr:nth-child(odd) {
 
 nav{
     /* border: 2px solid black; */
-    /* background-color:#d44e3f; */
+    background-color:#badfdb;
     /* background-image: linear-gradient(to right, red , yellow); */
-    background-image: linear-gradient(to bottom right, red, yellow);
+    
     height: 70px;
     /* margin-top:0; */
     border-radius: 15px;
@@ -66,6 +79,7 @@ nav ul{
     text-align: center
 }
 nav a{
+   
     text-decoration: none;
     float: left; 
     display: block;
@@ -74,6 +88,7 @@ nav a{
     padding-top: 10px;
     text-decoration: none;
     font-size: 17px;
+
 }
 nav a:hover{
     color:white;
@@ -84,9 +99,65 @@ nav a:hover{
     padding-top:10px;
     padding-left:10px;
     border-left: 5px solid rgb(0, 0, 0);
-    background-color: #ff975e;
+    background-color: #f0d78c;
     
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px; 
     height:50px;
+}
+
+
+input[type=text],input[type=password],input[type=email],input[type=number],input[type=date],select,
+textarea{
+    font-size:15px;
+    padding: 5px 0;
+    width:100%;
+    /* border-radius: 10px; */
+    background-color: #ecfcff;
+    
+}
+input[type=text],input[type=password],input[type=email],input[type=number],input[type=date]
+{
+    border:none;
+    border-bottom : 1px solid black;
+}
+
+input:focus,textarea:focus,select:focus{
+    background-color: white;
+    /* border: 1px solid black;; */
+    outline: none;
+}
+
+.FormRegister{
+
+    border:none;
+    border-radius: 20px;
+    /* height:100%; */
+    height : 900px;
+    width:40%;
+    background-color:#ecfcff;
+    border: 1px solid black;
+    padding: 30px 20px;
+    margin : 10% 30%;
+}
+input[type=submit]{
+    width:45%;
+    float:left;
+    height:40px;
+    background-color:green;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius: 10px;
+    
+}
+input[type=reset]{
+    width:45%;
+    float:right;
+    height:40px;
+    background-color:red;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius: 10px;
 }
