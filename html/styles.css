@@ -75,7 +75,7 @@ nav{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
-    
+
     text-align: center;
     /* height : 40px; */
 }
@@ -94,6 +94,7 @@ nav{
   color: #EEA200;
   padding: 10px 10px;
   border-radius: 15px;
+  padding: 10px 10px;
 }
 
 .innerHeading h2{
